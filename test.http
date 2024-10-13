@@ -1,0 +1,29 @@
+
+### APP funcionando
+GET http://localhost:5000
+
+### Obtener todas las tareas
+GET http://localhost:5000/tareas
+
+### Crear una tarea
+POST http://localhost:5000/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Tarea 1",
+    "descripcion": "Descripcion de la tarea 1",
+    "estado": "pendiente"
+}
+
+### Actualizar una tarea
+PUT http://localhost:5000/tareas/1
+Content-Type: application/json
+
+{
+    "nombre": "Tarea 1",
+    "descripcion": "Descripcion de la tarea 1",
+    "estado": "completada"
+}
+
+### Eliminar una tarea
+DELETE http://localhost:5000/tareas/1
